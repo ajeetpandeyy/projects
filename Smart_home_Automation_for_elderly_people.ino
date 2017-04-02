@@ -1,16 +1,14 @@
 
-//SMART HOME AUTOMATION FOR ELDERLY & PHYSICALLY DISABLE PEOPLE
-
+//SMART HOME AUTOMATION FOR ELDERLY & PHYSICALLY DISABLE PEOPLE THROUGH ARDUINO UNO, HC-05 & ANDROID APP(BLUETOOTH CONECTOR)
+//author: AJEET PANDEY(ARMY INSTITUTE OF TECHNOLOGY PUNE) (BE E&TC-2018)
 
 #include <SoftwareSerial.h>
-
 const int rxPin = 3;
 const int txPin = 2;               
 
 SoftwareSerial mySerial(rxPin, txPin);
 
 const int Loads[] = {9, 10, 11, 12};
-
 int state = 0;
 int flag = 0;
 
@@ -69,7 +67,12 @@ void loop()
                digitalWrite(Loads[3], LOW);
                flag=1;
                break;
-
+      case '9':digitalWrite(Loads[0], HIGH);
+               digitalWrite(Loads[1], HIGH);
+               digitalWrite(Loads[2], HIGH);
+               digitalWrite(Loads[3], HIGH);
+               flag=1;
+               break;
   
      
      }
