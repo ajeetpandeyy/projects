@@ -1,3 +1,7 @@
+// TEMPERATURE CONTROLLED RELAY
+// AUTHOR: AJEET PANDEY(BE E&TC-2018 , ARMY INSTITUTE OF TECHNOLOGY PUNE)
+
+
 #include <math.h>
 int pinOut = 10;
 double Thermistor(int RawADC)
